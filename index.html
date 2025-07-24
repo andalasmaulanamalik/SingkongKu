@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezatnya Daun Singkong - [Nama Brand Anda]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth; /* Smooth scroll for internal links */
+        }
+        .section-padding {
+            padding: 80px 0; /* Padding for sections */
+        }
+        /* Custom scroll-to-top button styling (optional) */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 30px; /* Place at the bottom */
+            right: 30px; /* Place at the right */
+            z-index: 99; /* Higher z-index to be on top */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #scrollToTopBtn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-green-700">
+                SingkongKu
+            </a>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-green-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden md:flex space-x-8" id="desktop-menu">
+                <a href="#tentang" class="text-gray-600 hover:text-green-700 transition duration-300">Tentang</a>
+                <a href="#produk" class="text-gray-600 hover:text-green-700 transition duration-300">Produk</a>
+                <a href="#testimoni" class="text-gray-600 hover:text-green-700 transition duration-300">Testimoni</a>
+                <a href="#kontak" class="text-gray-600 hover:text-green-700 transition duration-300">Kontak</a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-lg">
+            <a href="#tentang" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Tentang</a>
+            <a href="#produk" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Produk</a>
+            <a href="#testimoni" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Testimoni</a>
+            <a href="#kontak" class="block px-6 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Kontak</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="bg-gradient-to-r from-green-600 to-lime-500 text-white flex items-center justify-center min-h-screen relative overflow-hidden pt-20">
+        <div class="container mx-auto px-6 text-center z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                Nikmati Sensasi Baru: <br class="hidden md:block"> Kelezatan Daun Singkong dalam Setiap Gigitan!
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 animate-fade-in-up">
+                Inovasi camilan sehat dan gurih dari bahan alami pilihan, daun singkong.
+            </p>
+            <a href="#produk" class="bg-white text-green-700 hover:bg-gray-100 font-bold py-4 px-10 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out inline-block animate-fade-in-up">
+                Lihat Semua Varian
+            </a>
+        </div>
+        <div class="absolute inset-0 z-0">
+            <img src="https://via.placeholder.com/1920x1080/4CAF50/FFFFFF?text=Background+Daun+Singkong" alt="Daun Singkong Background" class="w-full h-full object-cover opacity-20">
+        </div>
+    </section>
+
+    <section id="tentang" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Mengapa Daun Singkong Kami Istimewa?</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-5xl text-green-500 mb-4">🌿</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Kaya Nutrisi Alami</h3>
+                    <p class="text-gray-700">Diperkaya vitamin, mineral, dan serat. Pilihan camilan sehat untuk keluarga Anda.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-5xl text-green-500 mb-4">✨</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Inovasi Rasa Unik</h3>
+                    <p class="text-gray-700">Mengubah daun singkong menjadi sensasi rasa yang belum pernah Anda rasakan sebelumnya.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <div class="text-5xl text-green-500 mb-4">🌱</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Bahan Baku Pilihan</h3>
+                    <p class="text-gray-700">Hanya menggunakan daun singkong segar dari petani lokal terpercaya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="section-padding bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Varian Rasa yang Menggoda Selera Anda</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-50 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="src/img/snack1.jpg" alt="Produk Daun Singkong Original" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Keripik Daun Singkong Original</h3>
+                        <p class="text-gray-700 mb-4">Gurih alami daun singkong dengan sentuhan rempah pilihan. Renyah sempurna di setiap gigitan.</p>
+                        <span class="inline-block bg-green-200 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-4">Kemasan 100g</span>
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Keripik%20Daun%20Singkong%20Original" target="_blank" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="src/img/snack2.jpg" alt="Produk Daun Singkong Pedas" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Stik Daun Singkong Pedas Nampol</h3>
+                        <p class="text-gray-700 mb-4">Sensasi pedas yang membakar semangat, dipadu gurihnya daun singkong. Siap bikin ketagihan!</p>
+                        <span class="inline-block bg-orange-200 text-orange-800 text-sm font-semibold px-3 py-1 rounded-full mb-4">Kemasan 90g</span>
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Stik%20Daun%20Singkong%20Pedas%20Nampol" target="_blank" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="src/img/snack3.jpg" alt="Produk Daun Singkong Keju" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Crispy Daun Singkong Keju</h3>
+                        <p class="text-gray-700 mb-4">Perpaduan gurihnya daun singkong dengan sentuhan rasa keju yang creamy dan bikin nagih.</p>
+                        <span class="inline-block bg-purple-200 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full mb-4">Kemasan 110g</span>
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Crispy%20Daun%20Singkong%20Keju" target="_blank" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <section id="testimoni" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Kata Mereka yang Sudah Mencoba</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 italic mb-4">"Nggak nyangka daun singkong bisa seenak ini! Gurihnya pas, renyah banget, dan yang paling penting sehat. Anak-anak di rumah juga suka banget!"</p>
+                    <p class="font-semibold text-gray-900">- Ibu Siti, Bandung</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 italic mb-4">"Camilan wajib pas lagi santai. Varian pedasnya nampol banget, bikin melek! Pengiriman juga cepat dan packing rapi."</p>
+                    <p class="font-semibold text-gray-900">- Budi Santoso, Jakarta</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="section-padding bg-green-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Siap Menikmati Kelezatan Daun Singkong Kami?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">
+                Hubungi kami sekarang untuk mendapatkan camilan favorit Anda!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+                <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20daun%20singkong%20Anda." target="_blank" class="bg-white text-green-700 hover:bg-gray-100 font-bold py-4 px-10 rounded-full text-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out inline-block">
+                    <i class="fab fa-whatsapp mr-3"></i> Pesan Via WhatsApp
+                </a>
+                <a href="#" class="text-white border-2 border-white hover:bg-white hover:text-green-700 font-bold py-4 px-10 rounded-full text-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out inline-block">
+                    Lihat di Marketplace
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="md:flex md:justify-between md:items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">SingkongKu</h3>
+                    <p class="text-gray-400">Inovasi Rasa dari Daun Singkong</p>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-3">Hubungi Kami</h4>
+                    <p class="text-gray-400">WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-white">0812-3456-7890</a></p>
+                    <p class="text-gray-400">Email: <a href="mailto:info@yourbrand.com" class="hover:text-white">info@yourbrand.com</a></p>
+                    <p class="text-gray-400">Alamat: Jl. Contoh No. 123, Bandung, Indonesia</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Ikuti Kami</h4>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://instagram.com/yourbrand" target="_blank" class="text-gray-400 hover:text-white text-3xl transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/yourbrand" target="_blank" class="text-gray-400 hover:text-white text-3xl transition duration-300">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://tiktok.com/@yourbrand" target="_blank" class="text-gray-400 hover:text-white text-3xl transition duration-300">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <p class="text-gray-500 text-sm">&copy; 2025 SingkongKu. Semua Hak Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Kembali ke Atas">↑</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked (optional, but good for UX)
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
